@@ -19,19 +19,7 @@ namespace Lab_2_1_2
             txty.Text = Properties.Settings.Default.y.ToString();
         }
 
-        public class Logic
-        {
-            public static int Multiply(int x, int y)
-            {
-                int b = 0;
-
-                for (int i = 0; i < y; i++)
-                {
-                    b = b + x;
-                }
-                return b;
-            }
-        }
+       
 
         private void txtx_TextChanged(object sender, EventArgs e)
         {
@@ -72,5 +60,19 @@ namespace Lab_2_1_2
             MessageBox.Show("Произведение равно = " + Logic.Multiply(x, y));
         }
     }
-    
+
+    public class Logic
+    {
+        public static int Multiply(int x, int y)
+        {
+            int b = 0;
+
+            for (int i = 0; i < y; i++)
+            {
+                b = b + x;
+            }
+            return b;
+        }
+    }
+
 }
